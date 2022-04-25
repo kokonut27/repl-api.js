@@ -1,3 +1,5 @@
+// Add future queries and mutations here
+
 export default {
   graphql: "https://replit.com/graphql",
   headers: {
