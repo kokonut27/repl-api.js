@@ -23,3 +23,7 @@ query User($user: String!) {
 }).then((res) => res.json());
 
 const data = await response.json();
+
+export default {
+  // add the main piece function here
+}
