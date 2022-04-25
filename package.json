@@ -1,0 +1,8 @@
+{
+  "name": "repl-api",
+  "type": "module",
+  "version": "0.0.1",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}
