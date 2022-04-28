@@ -1,6 +1,12 @@
-# repl-api docs
-> Written by kokonut. <!-- and edited by many contributors. -->
+#############
+repl-api docs
+#############
 
-## Contents
-* To be filled.
-  * To be filled.
+.. note::
+  Written by kokonut. <!-- and edited by many contributors. -->
+
+********
+Contents
+********
+- To be filled.
+  - To be filled.
