@@ -2,8 +2,7 @@
 repl-api docs
 #############
 
-.. note::
-  Written by kokonut.
+Written by kokonut.
 
 ********
 Contents
