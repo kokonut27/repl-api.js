@@ -63,7 +63,7 @@ html_theme = "sphinx_material"
 
 html_title = "Repl-api.js"
 
-html_logo = "images/icon.png"
+html_logo = "images/logo.png"
 
 html_static_path = ["_static"]
 
