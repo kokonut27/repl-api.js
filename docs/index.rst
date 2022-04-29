@@ -30,7 +30,7 @@ Want Help?
 ----------
 - Leave an `issue on the GitHub <https://github.com/kokonut27/repl-api.js/issues>`_.
 - Read through the :doc:`pages/api`.
-- Join the `Official Repl-api.js Discord server <FILL IN HERE>`_.
+- Join the `Official Repl-api.js Discord server <https://discord.gg/fSCCDMC8cg>`_.
 
 .. toctree::
     :maxdepth: 3
