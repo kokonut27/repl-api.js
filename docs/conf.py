@@ -61,7 +61,7 @@ autodoc_preserve_defaults = True
 #
 html_theme = "sphinx_material"
 
-html_title = "repl-api.js"
+html_title = "Repl-api.js"
 
 html_logo = "images/icon.png"
 
@@ -73,7 +73,7 @@ html_sidebars = {
 
 html_theme_options = {
     # -- Meta settings -------------------
-    "nav_title": "repl-api.js",
+    "nav_title": "Repl-api.js",
     
     # -- Styling settings ----------------
     "color_primary": "blue",

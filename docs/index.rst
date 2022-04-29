@@ -1,5 +1,5 @@
 #############
-repl-api docs
+Repl-api.js docs
 #############
 
 Written by kokonut.
