@@ -91,7 +91,7 @@ html_theme_options = {
     
     # --- Misc/HTML settings -------------
     "heroes": {
-        "index": "Blank",
+        "index": "Fast and efficient API for Replit that's written in NodeJS!",
         "pages/api": "Everything you need to know about the API.",
         "pages/examples": "Quickstart examples to get you going.",
         "pages/guides": "In-depth explorations of the library and its features."
@@ -99,7 +99,7 @@ html_theme_options = {
     "nav_links": [
         {
             "href": "https://github.com/kokonut27/repl-api.js/issues",
-            "title": "Issue Tracker",
+            "title": "Issues",
             "internal": False,
         },
         {
