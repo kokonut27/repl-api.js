@@ -103,7 +103,7 @@ html_theme_options = {
             "internal": False,
         },
         {
-            "href": "BLANK",
+            "href": "https://discord.gg/fSCCDMC8cg",
             "title": "Discord Server",
             "internal": False,
         },
@@ -111,7 +111,7 @@ html_theme_options = {
 }
 
 resource_links = {
-    "discord": "BLANK",
+    "discord": "https://discord.gg/fSCCDMC8cg",
     "issues": "https://github.com/kokonut27/repl-api.js/issues",
 }
 
