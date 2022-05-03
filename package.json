@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "dependencies": {
-    "node-fetch": "^3.2.4"
+    "node-fetch": "^3.2.4",
+    "node-libcurl": "^2.3.4"
   }
 }
