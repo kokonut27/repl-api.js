@@ -5,5 +5,6 @@
         pkgs.nodePackages.yarn
         pkgs.nodePackages.typescript
         pkgs.jq
+        pkgs.bashInteractive
 	];
 }
