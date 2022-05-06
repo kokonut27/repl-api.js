@@ -13,6 +13,41 @@ export default {
     "User-Agent": "Mozilla/5.0"
   },
   queries: {
+    userFull: `
+query User($username: String!) {
+  userByUsername(username: $username) {
+    bio
+    displayName
+    firstName
+    fullName
+    id
+    image
+    isHacker
+    isLoggedIn
+    isSubscribed
+    isVerified
+    karma
+    lastName
+    timeCreated
+    url
+    username
+    roles {
+      id
+      name
+      key
+      tagline
+    }
+    languages {
+      id
+      displayName
+      key
+      category
+      tagline
+      icon
+      isNew
+    }
+  }
+}`,
     user: `
 query User($username: String!) {
   userByUsername(username: $username) {
@@ -33,6 +68,5 @@ query User($username: String!) {
     username
   }
 }`,
-    // future queries.
   }
 }

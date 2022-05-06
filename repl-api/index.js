@@ -7,7 +7,7 @@ import Talk from './classes/talk.js';
 
 const replapi = new User("JBloves27", true);
 
-console.log(await replapi.userFull());
+console.log(await replapi.userCompressed());
 
 export default {
   User: User,
