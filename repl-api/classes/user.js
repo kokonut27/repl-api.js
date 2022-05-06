@@ -7,12 +7,20 @@ export default class User {
   constructor(username) {
     this.username = username;
   }
-
-  async userFull() {
+  /**
+  Get all data on a replit user
+  @param shouldSimplify Simplify the data returned from replit
+  */
+  async userFull(shouldSimplify) {
     const username = this.username;
 
-    return await getData(constants.queries.user, {
+    let data = await getData(constants.queries.user, { 
       "username": username,
     });
+    if (shouldSimplify) {
+      data = data.data.userByUsername;
+      data.url = "https://replit.com" + data.url;
+    }
+    return data;
   }
 }

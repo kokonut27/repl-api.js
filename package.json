@@ -4,8 +4,6 @@
   "version": "0.0.1",
   "gypfile": true,
   "dependencies": {
-    "node-addon-api": "^5.0.0",
-    "node-fetch": "^3.2.4",
     "node-libcurl": "^2.3.4"
   }
 }
