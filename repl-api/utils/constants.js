@@ -16,10 +16,20 @@ export default {
     user: `
 query User($username: String!) {
   userByUsername(username: $username) {
-    fullName
+    id
+    username
+    firstName
+    lastName
     bio
-    karma
+    isVerified
+    displayName
+    fullName
+    url
+    isLoggedIn
+    isSubscribed
+    timeCreated
   }
 }`,
+    // future queries.
   }
 }
