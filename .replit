@@ -1,4 +1,4 @@
-run = "bash repl-api/user.sh"
+run = "node repl-api/index.js"
 
 [nix]
 channel = "stable-21_11"

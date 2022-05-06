@@ -1,7 +1,8 @@
 // Add future queries and mutations here
 
 export default {
-  graphql: "https://replit.com/graphql",
+  hostname: "replit.com",
+  path: "/graphql",
   headers: {
     "Content-Type": "application/json",
   	Accept: "application/json",
@@ -10,5 +11,8 @@ export default {
   	Referrer: "https://replit.com/",
   	Origin: "https://replit.com/",
     "User-Agent": "Mozilla/5.0"
+  },
+  queries: {
+    // put the user query here
   }
 }
