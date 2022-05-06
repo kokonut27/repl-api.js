@@ -13,6 +13,13 @@ export default {
     "User-Agent": "Mozilla/5.0"
   },
   queries: {
-    // put the user query here
+    user: `
+query User($username: String!) {
+  userByUsername(username: $username) {
+    fullName
+    bio
+    karma
+  }
+}`,
   }
 }

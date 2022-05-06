@@ -11,8 +11,8 @@ export default class User {
   async userFull() {
     const username = this.username;
 
-    return await getData("query User($username: String!) {\n  userByUsername(username: $username) {\n    fullName\n    bio\n    karma\n  }\n}\n", {
+    return await getData(constants.queries.user, {
       "username": username,
-    })
+    });
   }
 }
