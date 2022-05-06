@@ -1,5 +1,5 @@
 import https from "https";
-import constants from "./constants.js"
+import constants from "./constants.js";
 import { Readable } from "stream";
 
 const options = {
@@ -9,15 +9,14 @@ const options = {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'X-Requested-With': 'https://replit.com',
+    'X-Requested-With': 'repl-api.js team',
     'Origin': 'https://replit.com/'
   }
 }
 
 function encodeData(query, variables) {
-  
   const data = new TextEncoder().encode(
-  JSON.stringify({
+    JSON.stringify({
       query,
       variables,
     })
@@ -43,7 +42,7 @@ export default function getData(query, variables) {
       });
     })
     req.on('error', error => {
-      console.error(error);
+      return console.error(error);
     });
     req.write(encodeData(query, variables));
     req.end();  

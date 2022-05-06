@@ -4,15 +4,17 @@ import constants from '../utils/constants.js';
 import getData from "../utils/request.js"
 
 export default class User {
-  constructor(username) {
+  constructor(username, shouldSimplify) {
     this.username = username;
+    this.shouldSimplify = shouldSimplify;
   }
   /**
   Get all data on a replit user
   @param shouldSimplify Simplify the data returned from replit
   */
-  async userFull(shouldSimplify) {
+  async userFull() {
     const username = this.username;
+    const shouldSimplify = this.shouldSimplify;
 
     let data = await getData(constants.queries.user, { 
       "username": username,
@@ -23,4 +25,6 @@ export default class User {
     }
     return data;
   }
+
+  
 }
