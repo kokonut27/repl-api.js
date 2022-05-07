@@ -15,13 +15,13 @@ npm install repl-api
 
 Then, import the package in your designated NodeJS file:
 
-```nodejs
+```js
 import Replapi from 'repl-api';
 ```
 
 Finally, startup the package:
 
-```nodejs
+```js
 const replapi = Replapi();
 const user = replapi.User(username);
 ```
@@ -32,6 +32,6 @@ Now you're ready to move on!
     :maxdepth: 3
     :hidden:
 
-    pages/guides/install
-    pages/guides/intro
-    pages/guides/quickstart
+    pages/guides/install.md
+    pages/guides/intro.md
+    pages/guides/quickstart.md
