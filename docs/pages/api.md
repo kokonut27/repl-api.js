@@ -1,5 +1,10 @@
 # API reference
 
-* [User Constructor](pages/api/user)
-* [Repls Constructor](pages/api/repls)
-* [Talk Constructor](pages/api/talk)
+## User Constructor
+* [User Constructor](https://repl-api.readthedocs.io/en/latest/pages/api/user.html)
+
+## Repls Constructor
+* [Repls Constructor](https://repl-api.readthedocs.io/en/latest/pages/api/repls.html)
+
+## Talk Constructor
+* [Talk Constructor](https://repl-api.readthedocs.io/en/latest/pages/api/talk.html)
