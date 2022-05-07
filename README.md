@@ -1,16 +1,18 @@
+[![Documentation Status](https://readthedocs.org/projects/repl-api/badge/?version=latest)](https://repl-api.readthedocs.io/en/latest/?badge=latest)
+
 # repl-api.js
 > A NodeJS Replit API wrapped around GraphQL, returning JSON data for easy use.
 
 ## Contents:
 * [About](https://github.com/kokonut27/repl-api.js#about)
 * [Quickstart](https://github.com/kokonut27/repl-api.js#quickstart)
-  * [Pre-installation]()
-  * [Installation]()
-  * [Examples]()
-* [Usage]()
-* [Contributing]()
-* [License]()
-* [Changelog]()
+  * [Pre-installation](https://github.com/kokonut27/repl-api.js#pre-installation)
+  * [Installation](https://github.com/kokonut27/repl-api.js#installation)
+  * [Examples](https://github.com/kokonut27/repl-api.js#examples)
+* [Usage](https://github.com/kokonut27/repl-api.js#usage)
+* [Contributing](https://github.com/kokonut27/repl-api.js#contributing)
+* [License](https://github.com/kokonut27/repl-api.js#license)
+* [Changelog](https://github.com/kokonut27/repl-api.js#changelog)
 
 ## About
 The Replit API has always been changing and hard to keep up with. Due to this, many API's such as [Ray's](https://github.com/ReplAPI-it/ReplAPI.it-NodeJS) have been depreciated. However, our goal is to keep up with the API, and maintain `repl-api.js`. Replit's API allows lots of data to be accessed, and this is the objective for `repl-api.js` - to return data while keeping up with the latest updates of Replit. Queries available are:
@@ -203,3 +205,21 @@ The following code *should* output something like this:
   ]
 }
 ```
+
+Find more API functions [here](https://repl-api.readthedocs.io/en/latest/pages/api.html).
+
+## Contributing
+Either leave a Pull Request, an Issue, or contact me at [here](https://kokonut.vercel.app/).
+
+## License
+[MIT](https://github.com/kokonut27/repl-api.js/blob/main/LICENSE)
+
+## Changelog
+> View more of the specifics at [repl-api.js/releases](https://github.com/kokonut27/repl-api.js/releases).
+
+### 0.0.1
+Initial Commit: currently holds basic User constructor functions and is expected to have many bugs.
+
+* Partially finished `User` constructor
+* Base setup functions
+* Fully working data retriever (thanks to [darkdarcool](https://github.com/darkdarcool))
