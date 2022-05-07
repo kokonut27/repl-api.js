@@ -37,6 +37,7 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.intersphinx",
     "sphinx.ext.napoleon",
+    "myst_parser"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -115,6 +116,11 @@ resource_links = {
     "issues": "https://github.com/kokonut27/repl-api.js/issues",
 }
 
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 
 # This is a function linkcode_resolve(domain, info), which should return the
 # URL to source code corresponding to the object in given domain with given

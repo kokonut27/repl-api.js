@@ -8,3 +8,7 @@ test("Does this even work?", async () => {
   expect(data.karma).toBe(3699);
 });
 
+const user = new replapi.User("JBloves27");
+
+let data = await user.userFull(true);
+console.log(data);

@@ -5,5 +5,7 @@
         pkgs.nodePackages.yarn
         pkgs.nodePackages.typescript
         pkgs.replitPackages.jest
+        pkgs.python39Full
+        pkgs.python39Packages.pip
 	];
 }

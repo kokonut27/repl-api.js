@@ -61,6 +61,145 @@ let data = await user.userFull(true);
 
 console.log(data.karma);
 ```
+For more examples, go to [the docs](https://repl-api.readthedocs.io/en/latest/pages/examples.html).
 
 ## Usage
-Now that we have everything ready, it's time to 
+Now that we have everything ready, it's time to actually use the package! For example, for full user data, we can use the following code:
+
+```js
+import Replapi from 'repl-api';
+
+const replapi = Replapi();
+const user = replapi.User("JBloves27");
+
+let data = await user.userFull(true);
+
+console.log(data);
+```
+
+The following code *should* output something like this:
+```
+{
+  bio: 'full-stack nodejs dev | developing a package: https://github.com/kokonut27/repl-api.js/',
+  displayName: 'koko/emerald',
+  firstName: 'koko/emerald',
+  fullName: 'koko/emerald',
+  id: 3282411,
+  image: 'https://storage.googleapis.com/replit/images/1651630189148_ec097c1c5fabeddb8b257d786e732cdb.jpeg',
+  isHacker: false,
+  isLoggedIn: false,
+  isSubscribed: false,
+  isVerified: true,
+  karma: 2186,
+  lastName: null,
+  timeCreated: '2020-05-01T16:19:41.685Z',
+  url: 'https://replit.com/@JBloves27',
+  username: 'JBloves27',
+  roles: [
+    {
+      id: '3282411:self_learner',
+      name: 'self learner',
+      key: 'SELF_LEARNER',
+      tagline: null
+    },
+    {
+      id: '3282411:explorer',
+      name: 'explorer',
+      key: 'EXPLORER',
+      tagline: 'Helps test Replit beta features'
+    }
+  ],
+  languages: [
+    {
+      id: 'python3',
+      displayName: 'Python',
+      key: 'python3',
+      category: 'Practical',
+      tagline: 'A dynamic language emphasizing readability.',
+      icon: 'https://replit.com/public/images/languages/python.svg',
+      isNew: false
+    },
+    {
+      id: 'bash',
+      displayName: 'Bash',
+      key: 'bash',
+      category: 'Practical',
+      tagline: 'The classic Unix shell',
+      icon: 'https://icons.util.repl.co/bash.svg',
+      isNew: false
+    },
+    {
+      id: 'html',
+      displayName: 'HTML, CSS, JS',
+      key: 'html',
+      category: 'Web',
+      tagline: 'The languages that make up the web.',
+      ic: '/public/images/languages/web_project.svg',
+          isNew: false
+    },
+    {
+      id: 'nodejs',
+      displayName: 'Node.js',
+      key: 'nodejs',
+      category: 'Practical',
+      tagline: 'Evented I/O for V8 JavaScript.',
+      icon: 'https://replit.com/public/images/languages/nodejs.svg',
+      isNew: false
+    },
+    {
+      id: 'nix',
+      displayName: 'Nix (beta)',
+      key: 'nix',
+      category: 'Practical',
+      tagline: 'A base repl for building anything you want in any language.',
+      icon: 'https://icons.util.repl.co/bash.svg',
+      isNew: false
+    },
+    {
+      id: 'cpp',
+      displayName: 'C++',
+      key: 'cpp',
+      category: 'Practical',
+      tagline: 'A general purpose system programming language.',
+      icon: 'https://replit.com/public/images/languages/cpp.svg',
+      isNew: false
+    },
+    {
+      id: 'swift',
+      displayName: 'Swift',
+      key: 'swift',
+      category: 'Practical',
+      tagline: 'A modern general-purpose programming language from Apple.',
+      icon: 'https://replit.com/public/images/languages/swift.svg',
+      isNew: false
+    },
+    {
+      id: 'c',
+      displayName: 'C',
+      key: 'c',
+      category: 'Practical',
+      tagline: 'Low-level and cross-platform imperative language.',
+      icon: 'https://replit.com/public/images/languages/c.svg',
+      isNew: false
+    },
+    {
+      id: 'scheme',
+      displayName: 'Scheme',
+      key: 'scheme',
+      category: 'Practical',
+      tagline: 'An elegant dynamic dialect of Lisp.',
+      icon: '/public/images/languages/scheme.svg',
+      isNew: false
+    },
+    {
+      id: 'java10',
+      displayName: 'Java',
+      key: 'java10',
+      category: 'Practical',
+      tagline: 'A concurrent, class-based, statically typed object-oriented language.',
+      icon: 'https://replit.com/public/images/languages/java.svg',
+      isNew: false
+    }
+  ]
+}
+```
