@@ -4,5 +4,6 @@
         pkgs.nodePackages.typescript-language-server
         pkgs.nodePackages.yarn
         pkgs.nodePackages.typescript
+        pkgs.replitPackages.jest
 	];
 }
