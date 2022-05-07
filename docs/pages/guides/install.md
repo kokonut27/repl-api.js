@@ -28,10 +28,13 @@ const user = replapi.User(username);
 
 Now you're ready to move on!
 
-.. toctree::
-    :maxdepth: 3
-    :hidden:
+```{toctree}
+---
+maxdepth: 3
+hidden
+---
 
-    pages/guides/install.md
-    pages/guides/intro.md
-    pages/guides/quickstart.md
+pages/guides/install.md
+pages/guides/intro.md
+pages/guides/quickstart.md
+```
