@@ -4,19 +4,15 @@ import constants from '../utils/constants.js';
 import getData from "../utils/request.js"
 
 export default class User {
-  /**
-  @param shouldSimplify Simplify the data returned from replit
-*/
-  constructor(username, shouldSimplify) {
+  constructor(username) {
     this.username = username;
-    this.shouldSimplify = shouldSimplify;
   }
   /**
-  Get all data on a replit user
+  Get all data on a Replit user
+  @param shouldSimplify Simplify the data returned from replit
   */
-  async userFull() {
+  async userFull(shouldSimplify) {
     const username = this.username;
-    const shouldSimplify = this.shouldSimplify;
 
     let data = await getData(constants.queries.userFull, { 
       "username": username,
@@ -28,9 +24,13 @@ export default class User {
     return data;
   }
 
-  async userCompressed() {
+  /**
+  Get compressed data on a Replit user
+  @param shouldSimplify Simplify the data returned from replit
+  */
+  async userCompressed(shouldSimplify) {
     const username = this.username;
-    const shouldSimplify = this.shouldSimplify;
+    // const shouldSimplify = this.shouldSimplify;
 
     let data = await getData(constants.queries.user, { 
       "username": username,

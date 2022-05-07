@@ -6,9 +6,15 @@
   "license": "MIT",
   "version": "0.0.1",
   "gypfile": true,
-  "repo": "https://github.com/kokonut27/repl-api.js",
+  "repository": "https://github.com/kokonut27/repl-api.js",
   "homepage": "https://repl-api.readthedocs.io",
   "dependencies": {
     "node-libcurl": "^2.3.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
   }
 }

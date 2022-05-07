@@ -1,4 +1,4 @@
-run = "node repl-api/index.js"
+run = "yarn test" # tests/tests.js
 
 [nix]
 channel = "stable-21_11"
