@@ -1,7 +1,7 @@
 [![Documentation Status](https://readthedocs.org/projects/repl-api/badge/?version=latest)](https://repl-api.readthedocs.io/en/latest/?badge=latest)
 
 # repl-api.js
-> A NodeJS Replit API wrapped around GraphQL, returning JSON data for easy use.
+> A NodeJS Replit API package wrapped around GraphQL, returning JSON data for easy use.
 
 ## Contents:
 * [About](https://github.com/kokonut27/repl-api.js#about)
