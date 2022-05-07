@@ -28,7 +28,7 @@ The Replit API has always been changing and hard to keep up with. Due to this, m
 ### Pre-installation
 In order to use `repl-api.js`, npm must be installed before using it:
 
-```
+```shell
 npm install npm@latest -g
 ```
 

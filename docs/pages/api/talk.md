@@ -1,1 +1,6 @@
-# Using the Talk Constructor
+# Talk
+
+The Talk class is designed to return post data from the Replit Community, including comments, likes, and more.
+
+----
+
