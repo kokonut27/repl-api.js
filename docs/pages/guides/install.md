@@ -28,7 +28,7 @@ const user = replapi.User(username);
 
 Now you're ready to move on!
 
-```{toctree}
+```toctree
 ---
 maxdepth: 3
 hidden
