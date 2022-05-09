@@ -41,4 +41,36 @@ export default class User {
     }
     return data;
   }
+
+  async userPosts(shouldSimplify, count=10, order="new") {
+    const username = this.username;
+
+    let data = await getData(constants.queries.userPosts, { 
+      "username": username,
+      "count": count,
+      "order": order,
+      "after": ""
+    });
+    if (shouldSimplify) {
+      data = data.data.userByUsername;
+      data.url = "https://replit.com" + data.url;
+    }
+    return data;
+  }
+
+  async userComments(shouldSimplify, count=10, order="new") {
+    const username = this.username;
+
+    let data = await getData(constants.queries.userComments, { 
+      "username": username,
+      "count": count,
+      "order": order,
+      "after": ""
+    });
+    if (shouldSimplify) {
+      data = data.data.userByUsername;
+      data.url = "https://replit.com" + data.url;
+    }
+    return data;
+  }
 }

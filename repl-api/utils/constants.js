@@ -68,5 +68,57 @@ query User($username: String!) {
     username
   }
 }`,
+    userPosts: `
+query UserPosts($username: String!) {
+  userByUsername(username: $username) {
+    posts(count: $count, after: $after, order: $order) {
+		  items {
+        id
+      	title
+      	body
+      	url
+      	commentCount
+      	isHidden
+      	isPinned
+      	isLocked
+      	isAnnouncement
+      	timeCreated
+      	isAnswered
+        isAnswerable
+      	voteCount
+      	canVote
+      	hasVoted
+		  }
+	  }
+  }
+}`,
+    userComments: `
+query userComments($username: String!) {
+  userByUsername(username: $username) {
+    comments(count: $count, after: $after, order: $order) {
+		items {
+			id
+      body
+      voteCount
+      timeCreated
+      timeUpdated
+      url
+      isAuthor
+      canEdit
+      canVote
+      canComment
+      hasVoted
+      canReport
+      hasReported
+      isAnswer
+      canSelectAsAnswer
+      canUnselectAsAnswer
+      preview {
+        length
+        markdown
+      }
+		}
+  }
+}`,
   }
 }

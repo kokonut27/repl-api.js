@@ -1,4 +1,4 @@
-# User
+# User Class
 
 The User class contains the basic function on handling JSON data returned from Replit Graphql API.
 

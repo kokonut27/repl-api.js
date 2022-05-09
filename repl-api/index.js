@@ -6,10 +6,10 @@ import Repls from './classes/repls.js';
 import Talk from './classes/talk.js';
 import classes from './classes.js';
 
-const replapi = new User("JBloves27", true);
+const replapi = new User("JBloves27");
 
 // console.log(await replapi.userCompressed());
-// console.log(await replapi.userFull());
+console.log(await replapi.userPosts());
 
 export default function Replapi() {
   return {

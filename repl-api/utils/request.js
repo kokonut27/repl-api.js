@@ -18,7 +18,7 @@ function encodeData(query, variables) {
   const data = new TextEncoder().encode(
     JSON.stringify({
       query,
-      variables,
+      variables
     })
   );
   return data;
