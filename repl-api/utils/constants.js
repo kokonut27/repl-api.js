@@ -69,31 +69,41 @@ query User($username: String!) {
   }
 }`,
     userPosts: `
-query UserPosts($username: String!) {
+query UserPosts($username: String!, $after: String!, $count: Int!, $order: String!) {
   userByUsername(username: $username) {
-    posts(count: $count, after: $after, order: $order) {
+    posts(after: $after, count: $count, order: $order) {
 		  items {
         id
-      	title
-      	body
-      	url
-      	commentCount
-      	isHidden
-      	isPinned
-      	isLocked
-      	isAnnouncement
-      	timeCreated
-      	isAnswered
+        title
+        body
+        showHosted
+        voteCount
+        commentCount
+        isPinned
+        isLocked
+        timeCreated
+        timeUpdated
+        url
+        isAnnouncement
+        isAuthor
+        canEdit
+        canComment
+        canVote
+        canPin
+        canSetType
+        canChangeBoard
+        canLock
+        hasVoted
+        canReport
+        hasReported
         isAnswerable
-      	voteCount
-      	canVote
-      	hasVoted
+        tutorialPages
 		  }
 	  }
   }
 }`,
     userComments: `
-query userComments($username: String!) {
+query UserComments($username: String!) {
   userByUsername(username: $username) {
     comments(count: $count, after: $after, order: $order) {
 		items {

@@ -55,7 +55,7 @@ export default class User {
       data = data.data.userByUsername;
       data.url = "https://replit.com" + data.url;
     }
-    return data;
+    return data.errors;
   }
 
   async userComments(shouldSimplify, count=10, order="new") {

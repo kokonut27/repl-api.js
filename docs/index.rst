@@ -1,5 +1,5 @@
 #############
-Repl-api.js Docs
+Docs
 #############
 
 Repl-api.js is an API written in NodeJS, wrapping around GraphQL queries and mutations to return Replit data in JSON form.
