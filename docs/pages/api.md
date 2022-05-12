@@ -1,5 +1,7 @@
 # API reference
 
+.. _user-class:
+
 ## User Class
 
 The User class contains the basic function on handling JSON data returned from Replit Graphql API.
@@ -34,10 +36,14 @@ await user.userFull(true);
 
 ```
 
+.. _repls-class:
+
 ## Repls Class
 The Repls class is developed to return JSON data on user repls. This data includes its language, likes, and more.
 
 ---- 
+
+.. _talk-class:
 
 ## Talk Class
 The Talk class is designed to return post data from the Replit Community, including comments, likes, and more.
