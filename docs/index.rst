@@ -22,9 +22,9 @@ Getting Started
 - **API:**
 
   - :doc:`pages/api`
-  - :doc:`pages/api/user`
-  - :doc:`pages/api/repls`
-  - :doc:`pages/api/talk`
+  - :doc:`pages/api#user-class`
+  - :doc:`pages/api#repls-class`
+  - :doc:`pages/api#talk-class`
 
 Want Help?
 ----------
