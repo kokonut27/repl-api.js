@@ -22,9 +22,9 @@ Getting Started
 - **API:**
 
   - :doc:`pages/api`
-  - :ref:`user-class`
-  - :ref:`repls-class`
-  - :ref:`talk-class`
+  - `User Class <https://repl-api.readthedocs.io/en/latest/pages/api.html#user-class>`_
+  - `Repls Class <https://repl-api.readthedocs.io/en/latest/pages/api.html#repls-class>`_
+  - `Talk Class <https://repl-api.readthedocs.io/en/latest/pages/api.html#talk-class>`_
 
 Want Help?
 ----------
