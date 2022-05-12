@@ -48,9 +48,9 @@ The Repls class is developed to return JSON data on user repls. This data includ
 
 ---- 
 
-.. _talk-class:
+.. _posts-class:
 
-## Talk Class
-The Talk class is designed to return post data from the Replit Community, including comments, likes, and more.
+## Posts Class
+The Posts class is designed to return post data from the Replit Community, including comments, likes, and more.
 
 ----

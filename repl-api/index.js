@@ -3,7 +3,7 @@ import path from 'path';
 
 import User from './classes/user.js';
 import Repls from './classes/repls.js';
-import Talk from './classes/talk.js';
+import Posts from './classes/posts.js';
 import classes from './utils/classes.js';
 
 const replapi = new User("darkdarcool");
@@ -16,6 +16,6 @@ export default function Replapi() {
   return {
     User: classes.user,
     Repls: classes.repls,
-    Talk: classes.talk
+    Posts: classes.posts
   };
 }
