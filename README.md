@@ -217,7 +217,7 @@ Either leave a Pull Request, an Issue, or contact me at [here](https://kokonut.v
 ## Changelog
 > View more of the specifics at [repl-api.js/releases](https://github.com/kokonut27/repl-api.js/releases).
 
-### 0.0.1
+### 0.0.0
 Initial Commit: currently holds basic User constructor functions and is expected to have many bugs.
 
 * Partially finished `User` constructor
