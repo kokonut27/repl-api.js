@@ -15,7 +15,7 @@
 * [Changelog](https://github.com/kokonut27/repl-api.js#changelog)
 
 ## About
-The Replit API has always been changing and hard to keep up with. Due to this, many API's such as [Ray's](https://github.com/ReplAPI-it/ReplAPI.it-NodeJS) have been depreciated. However, our goal is to keep up with the API, and maintain `repl-api.js`. Replit's API allows lots of data to be accessed, and this is the objective for `repl-api.js` - to return data while keeping up with the latest updates of Replit. Queries available are:
+The Replit API has always been changing and hard to keep up with. Due to this, many API's such as [RayhanADev's](https://github.com/ReplAPI-it/ReplAPI.it-NodeJS) have been depreciated. However, our goal is to keep up with the API, and maintain `repl-api.js`. Replit's API allows lots of data to be accessed, and this is the objective for `repl-api.js` - to return data while keeping up with the latest updates of Replit. Queries available are:
 
 * User queries: General user data, user posts, user comments, etc.
 * Repl queries: General repl data, repl comments, etc.
