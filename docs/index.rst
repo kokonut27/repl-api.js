@@ -24,7 +24,7 @@ Getting Started
   - :doc:`pages/api`
   - `User Class <https://repl-api.readthedocs.io/en/latest/pages/api.html#user-class>`_
   - `Repls Class <https://repl-api.readthedocs.io/en/latest/pages/api.html#repls-class>`_
-  - `Posts Class <https://repl-api.readthedocs.io/en/latest/pages/api.html#posts-class>`_
+  - `Post Class <https://repl-api.readthedocs.io/en/latest/pages/api.html#post-class>`_
 
 Want Help?
 ----------

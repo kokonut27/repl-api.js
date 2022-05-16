@@ -64,6 +64,8 @@ export default class User {
   /**
   Get post data on a Replit user
   @param shouldSimplify Simplify the data returned from replit
+  @param count Number of user posts returned
+  @param order Returns order of posts
   */
   async userPosts(shouldSimplify, count=10, order="new") {
     const username = this.username;
@@ -75,7 +77,7 @@ export default class User {
       "after": ""
     });
     if (data.errors) {
-      throw new Error(`The Replit GraphQL Server returned an error: ${data.errors}`);
+      throw new Error(`The Replit GraphQL Server returned an error: ${JSON.stringify(data.errors)}`);
     }
     if (!data.data.userByUsername) {
       throw new Error(`The Replit username '${username}' does not exist`);
@@ -91,6 +93,8 @@ export default class User {
   /**
   Get comment data on a Replit user
   @param shouldSimplify Simplify the data returned from replit
+  @param count Number of user comments returned
+  @param order Returns order of comments
   */
   async userComments(shouldSimplify, count=10, order="new") {
     const username = this.username;
@@ -109,7 +113,6 @@ export default class User {
     } else {
       if (shouldSimplify) {
         data = data.data.userByUsername;
-        data.url = "https://replit.com" + data.url;
       }
       return data;
     }

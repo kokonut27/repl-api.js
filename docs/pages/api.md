@@ -46,7 +46,7 @@ The Repls class is developed to return JSON data on user repls. This data includ
 ---- 
 
 
-## Posts Class
-The Posts class is designed to return post data from the Replit Community, including comments, likes, and more.
+## Post Class
+The Post class is designed to return post data from the Replit Community, including comments, likes, and more.
 
 ----

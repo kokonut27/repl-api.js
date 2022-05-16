@@ -1,4 +1,86 @@
-// Add future queries and mutations here
+const userAttributes = `
+bio
+displayName
+firstName
+fullName
+id
+image
+isHacker
+isLoggedIn
+isSubscribed
+isVerified
+karma
+lastName
+timeCreated
+url
+username
+`;
+
+const roleAttributes = `
+id
+name
+key
+tagline
+`;
+
+const langAttributes = `
+id
+displayName
+key
+category
+tagline
+icon
+isNew
+`;
+
+const postAttributes = `
+id
+title
+body
+showHosted
+voteCount
+commentCount
+isPinned
+isLocked
+timeCreated
+timeUpdated
+url
+isAnnouncement
+isAuthor
+canEdit
+canComment
+canVote
+canPin
+canSetType
+canChangeBoard
+canLock
+hasVoted
+canReport
+hasReported
+isAnswerable
+tutorialPages
+preview(length: 150, removeMarkdown: true)
+`;
+
+const commentAttributes = `
+id
+body
+voteCount
+timeCreated
+timeUpdated
+url
+isAuthor
+canEdit
+canVote
+canComment
+hasVoted
+canReport
+hasReported
+isAnswer
+canSelectAsAnswer
+canUnselectAsAnswer
+preview(length: 150, removeMarkdown: true)
+`;
 
 export default {
   hostname: "replit.com",
@@ -15,90 +97,23 @@ export default {
   queries: {
     userFull: `
 query User($username: String!) {
-  userByUsername(username: $username) {
-    bio
-    displayName
-    firstName
-    fullName
-    id
-    image
-    isHacker
-    isLoggedIn
-    isSubscribed
-    isVerified
-    karma
-    lastName
-    timeCreated
-    url
-    username
-    roles {
-      id
-      name
-      key
-      tagline
-    }
-    languages {
-      id
-      displayName
-      key
-      category
-      tagline
-      icon
-      isNew
-    }
+  userByUsername(username: $username) { 
+    ${userAttributes}
+    roles { ${roleAttributes} }
+    languages { ${langAttributes} }
   }
 }`,
     user: `
 query User($username: String!) {
   userByUsername(username: $username) {
-    bio
-    displayName
-    firstName
-    fullName
-    id
-    image
-    isHacker
-    isLoggedIn
-    isSubscribed
-    isVerified
-    karma
-    lastName
-    timeCreated
-    url
-    username
+    ${userAttributes}
   }
 }`,
     userPosts: `
 query UserPosts($username: String!, $after: String!, $count: Int!, $order: String!) {
   userByUsername(username: $username) {
     posts(after: $after, count: $count, order: $order) {
-		  items {
-        id
-        title
-        body
-        showHosted
-        voteCount
-        commentCount
-        isPinned
-        isLocked
-        timeCreated
-        timeUpdated
-        url
-        isAnnouncement
-        isAuthor
-        canEdit
-        canComment
-        canVote
-        canPin
-        canSetType
-        canChangeBoard
-        canLock
-        hasVoted
-        canReport
-        hasReported
-        isAnswerable
-        tutorialPages
-		  }
+		  items { ${postAttributes} }
 	  }
   }
 }`,
@@ -106,29 +121,30 @@ query UserPosts($username: String!, $after: String!, $count: Int!, $order: Strin
 query UserComments($username: String!) {
   userByUsername(username: $username) {
     comments(count: $count, after: $after, order: $order) {
-		items {
-			id
-      body
-      voteCount
-      timeCreated
-      timeUpdated
-      url
-      isAuthor
-      canEdit
-      canVote
-      canComment
-      hasVoted
-      canReport
-      hasReported
-      isAnswer
-      canSelectAsAnswer
-      canUnselectAsAnswer
-      preview {
-        length
-        markdown
-      }
-		}
+		items { ${commentAttributes} }
   }
 }`,
+    postFull: `
+query Post($id: Int!) {
+  post(id: $id) {
+    ${postAttributes}
+    
+    user { ${userAttributes} }
+    repl { name }
+    comments(count: 10) { 
+      items { ${commentAttributes} } 
+    }
+    votes { 
+      items { 
+        id user {  
+          ${userAttributes}
+        } 
+      } 
+    }
+    answeredBy { ${userAttributes} }}
+        answer {
+          ${commentAttributes}
+        }
+`
   }
 }

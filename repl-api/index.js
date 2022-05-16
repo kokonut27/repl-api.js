@@ -3,19 +3,19 @@ import path from 'path';
 
 import User from './classes/user.js';
 import Repls from './classes/repls.js';
-import Posts from './classes/posts.js';
+import Post from './classes/post.js';
 import classes from './utils/classes.js';
 
 const replapi = new User("darkdarcool");
 
 // console.log(await replapi.userCompressed());
-let data = await replapi.userPosts();
+let data = await replapi.userComments();
 console.log(data);
 
 export default function Replapi() {
   return {
     User: classes.user,
     Repls: classes.repls,
-    Posts: classes.posts
+    Post: classes.post
   };
 }
