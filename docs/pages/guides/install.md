@@ -23,7 +23,6 @@ Finally, startup the package:
 
 ```js
 const replapi = Replapi();
-const user = replapi.User(username);
 ```
 
 Now you're ready to move on!
