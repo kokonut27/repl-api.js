@@ -16,6 +16,35 @@ url
 username
 `;
 
+const replAttributes = `
+id
+language
+isRenamed
+isProject
+isPrivate
+isStarred
+isAlwaysOn
+isBoosted
+title
+slug
+description
+timeCreated
+timeUpdated
+isOwner
+pinnedToProfile
+folderId
+files
+size
+url
+url(lite: true)
+hostedUrl(dotty: true, protocol: 'HTTPS')
+terminalUrl
+runCount
+publicForkCount
+imageUrl
+hasUnitTesting
+`;
+
 const roleAttributes = `
 id
 name
@@ -145,6 +174,9 @@ query Post($id: Int!) {
         answer {
           ${commentAttributes}
         }
+`,
+    communityRepls: `
+query communityRepls() { ${replAttributes} }
 `
   }
 }

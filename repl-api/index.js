@@ -1,18 +1,19 @@
 import User from './classes/user.js';
 import Repls from './classes/repls.js';
 import Post from './classes/post.js';
-import classes from './utils/classes.js';
+import Community from './classes/community.js';
 
-const replapi = new User("darkdarcool");
+const replapi = new Community();
 
 // console.log(await replapi.userCompressed());
-let data = await replapi.userComments();
+let data = await replapi.featuredRepls();
 console.log(data);
 
 export default function Replapi() {
   return {
-    User: classes.user,
-    Repls: classes.repls,
-    Post: classes.post
+    User: User,
+    Repls: Repls,
+    Post: Post,
+    Community: Community,
   };
 }
