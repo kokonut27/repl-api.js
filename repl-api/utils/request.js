@@ -1,6 +1,5 @@
 import https from "https";
 import constants from "./constants.js";
-import { Readable } from "stream";
 
 const options = {
   hostname: constants.hostname,

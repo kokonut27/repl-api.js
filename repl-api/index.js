@@ -1,6 +1,3 @@
-import fs from 'fs';
-import path from 'path';
-
 import User from './classes/user.js';
 import Repls from './classes/repls.js';
 import Post from './classes/post.js';
