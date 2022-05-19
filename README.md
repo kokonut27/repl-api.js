@@ -218,8 +218,11 @@ Either leave a Pull Request, an Issue, or contact me at [here](https://kokonut.v
 > View more of the specifics at [repl-api.js/releases](https://github.com/kokonut27/repl-api.js/releases).
 
 ### 0.0.0
-Initial Commit: currently holds basic User constructor functions and is expected to have many bugs.
+Initial Commit: currently holds basic User constructor functions, Community, Post, and Repls - and is expected to have many bugs.
 
-* Partially finished `User` constructor
+* Finished base `User` constructor
+* Finished base `Community` constructor
+* Partially finished `Post` constructor
+* Partially finished `Repls` constructor
 * Base setup functions
 * Fully working data retriever (thanks to [darkdarcool](https://github.com/darkdarcool))
