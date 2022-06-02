@@ -7,6 +7,7 @@ const options = {
   path: constants.path,
   method: 'POST',
   headers: {
+    'Set-Cookie': `connect.sid=${process.env['cookie']}`,
     'Content-Type': 'application/json',
     'X-Requested-With': 'repl-api.js team',
     'Origin': 'https://replit.com/'

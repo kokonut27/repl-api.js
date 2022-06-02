@@ -3,10 +3,10 @@ import Repls from './classes/repls.js';
 import Post from './classes/post.js';
 import Community from './classes/community.js';
 
-const replapi = new Community();
+const replapi = new User("JBloves27");
 
 // console.log(await replapi.userCompressed());
-let data = await replapi.featuredRepls();
+let data = await replapi.userRestfulFull();
 console.log(data);
 
 export default function Replapi() {

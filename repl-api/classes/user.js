@@ -134,7 +134,7 @@ export default class User {
     const username = this.username;
     let headers = constants.headers;
 
-    let data = await fetch(`${constants.Origin}/data/profiles/${username}`, {
+    let data = await fetch(`https://replit.com/data/profiles/${username}`, {
       method: "GET",
       headers
     }).then((res) => res.json());
