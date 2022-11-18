@@ -9,7 +9,7 @@
   "repository": "https://github.com/kokonut27/repl-api.js",
   "homepage": "https://repl-api.readthedocs.io",
   "dependencies": {
-    "node-libcurl": "^2.3.4"
+    "node-libcurl": "^3.0.0"
   },
   "devDependencies": {
     "jest": "^29.0.0"
